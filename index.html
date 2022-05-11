@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD-UCAMP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://u-camp.utel.edu.mx/hs-fs/hubfs/logo_hubs-01.jpg?width=80&height=80&name=logo_hubs-01.jpg"
+                    alt="">
+            </a>
+            <span class="navbar-text fw-bolder">
+                Proyecto No. 2: Desarrollo de Software CRUD
+            </span>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <div class="container">
+
+        <div class="datos">
+            <h2 class=" titulo">¿Qué es un CRUD?</h2>
+            <div class="textos">
+                <p class="texto text-center">Es un proceso de software que nos permite manipular datos, utilizando
+                    la persistencia.</p>
+                <p class="texto text-center">A continuación, verás un ejemplo de un listado de tareas, el cual te
+                    permitirá
+                    agregar, modificar, borrar y leer pendientes que tengas.</p>
+                <p class="texto text-center">Ten la libertad de usarlo a tu conveniencia.</p>
+            </div>
+
+            <br>
+            <div class="container mt-4" id="body">
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="card ">
+                            <div class="card-header card-header-primary card-header-text">
+                                <div class="card-text">
+
+                                    <h4 class="card-title">Agregar nueva tarea</h4>
+                                </div>
+                            </div>
+
+                            <br>
+                            <form id="formulario">
+
+                                <div class=" row">
+                                    <label for="tarea" class="col-sm-2 col-form-label">Tarea:</label>
+                                    <div class="col-md-9">
+                                        <div class=" has-default">
+                                            <input type="text" class="form-control input-sm" id="tarea" name="tarea"
+                                                placeholder="Tarea" required>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" row">
+
+                                    <label for="descripcion" class="col-sm-2 col-form-label">Descripción:</label>
+                                    <div class="col-md-9">
+                                        <div class=" has-default">
+
+
+                                            <textarea class="form-control" id="descripcion" name="descripcion" rows="3"
+                                                cols="20" required></textarea>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-check">
+                                    <button type="submit" class="btn btn-info btn-round">Agregar
+                                        tarea</button>
+                                </div>
+                            </form>
+
+                        </div>
+
+                        <div class="card">
+                            <div class="col-md-12">
+                                <table class="table caption-top bg-light">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Tarea</th>
+                                            <th scope="col">Descripción</th>
+                                            <th scope="col">Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbody">
+                                        <tr>
+                                            <td>Yo soy Robot</td>
+                                            <td>Libro de Sci-Fi</td>
+                                            <td>200.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <footer class="footer">
+            <div class="footer-info">
+                <h1>LUIS ENRIQUE GUZMÁN RAMÍREZ</h1>
+                <p>CDMX</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contáctame</h3>
+                <p>Y comencemos a trabajar</p>
+            </div>
+            <div class="footer-sns">
+                <div class="design-by">
+                    Design By QUISHER
+                </div>
+                <div class="sns-links">
+                    <a href="https://github.com/quizher" target="_blank" rel="noreferrer">
+                        <i class="fab fa-github github"></i>
+                    </a>
+                    <a href="https://instagram.com/quishergr?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer">
+                        <i class="fab fa-instagram instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/quisher" target="_blank" rel="noreferrer">
+                        <i class="fab fa-facebook facebook"></i>
+                    </a>
+                </div>
+            </div>
+
+        </footer>
+
+
+
+        <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+        </script>
+
+
+
+</body>
+
+</html>
